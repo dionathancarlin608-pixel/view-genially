@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Ademicon - Genially Clean</title>
+    <style>
+        /* Remove todas as margens da página */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #ffffff; 
+        }
+
+        /* Moldura de Recorte 16:9 */
+        .wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção mágica para apresentações */
+            height: 0;
+            overflow: hidden; /* Isso "deleta" o que sobrar para fora */
+        }
+
+        /* O Iframe "empurrado" para esconder as barras */
+        iframe {
+            position: absolute;
+            top: -45px;      /* Sobe o site para esconder o cabeçalho feio */
+            left: 0;
+            width: 100%;
+            height: 112%;    /* Altura maior para a barra inferior sumir embaixo */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <iframe 
+            src="https://view.genially.com/698c9393c24972e463d36ee8" 
+            allowfullscreen="true" 
+            webkitallowfullscreen="true" 
+            mozallowfullscreen="true">
+        </iframe>
+    </div>
+
+</body>
+</html>
